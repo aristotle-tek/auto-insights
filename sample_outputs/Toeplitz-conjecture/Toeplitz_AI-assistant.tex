@@ -1,0 +1,644 @@
+\documentclass{article}
+
+\usepackage{arxiv}
+
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage{hyperref}       % hyperlinks
+\usepackage{url}            % simple URL typesetting
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{amsmath}
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+\usepackage{cleveref}       % smart cross-referencing
+\usepackage{lipsum}         % Can be removed after putting your text content
+\usepackage{graphicx}
+\usepackage{natbib}
+\usepackage{doi}
+\usepackage{algorithm2e}
+
+
+\title{AI Insights on the Toeplitz' Conjecture (Inscribed Square Problem)
+}
+\date{}
+\author{\hspace{1mm}GPT-4, with Andrew Peterson}% \thanks{} \\
+\renewcommand{\undertitle}{AI Assistant Brainstorm}
+% Add PDF metadata to help organize sources
+% Once the PDF is generated, you can check the metadata with `pdfinfo foo.pdf`
+\hypersetup{
+pdftitle={AI Research Assistant - Andrew Peterson },
+pdfsubject={AI, scientific research, Toeplitz conjecture, inscribed square problem},
+pdfauthor={GPT-4 and Andrew Peterson},
+pdfkeywords={Braid groups, Knot invariants, Hyperbolic, Manifolds, Fuchsian Groups, Planarity testing, Graph theory, Philosophy, Singularity theory, Catastrophe theory, Computational geometry, Computational topology, Computational algebraic geometry, },
+}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Here is the source research question that served as a prompt: ``The inscribed square problem, also known as the square peg problem or the Toeplitz' conjecture, is unsolved: Does every plane simple closed curve contain all four vertices of some square? This is true if the curve is convex or piecewise smooth and in other special cases. Please provide suggestions for diverse approaches from other fields of mathematics that might help solve this problem.''
+\end{abstract}
+
+\section{Topological invariants and algebraic topology}
+
+\subsection{Foundations of Topological Invariants and Algebraic Topology}
+
+In the study of algebraic topology, various papers have contributed to the development of the field. Elmendorf et al. (2007) discusses rings, modules, and algebras in stable homotopy theory, focusing on the category of $\mathbb{L}$-spectra and related topics. This can be mathematically expressed as:
+
+\[
+\mathbb{L} = \bigoplus_{n \in \mathbb{Z}} \mathbb{L}_n
+\]
+
+where $\mathbb{L}_n$ represents the $n$-th homotopy group of the $\mathbb{L}$-spectrum.
+
+\cite{Huebschmann2013PoissonCA} introduces Poisson cohomology and quantization, constructing an (R,A)-Lie algebra structure on the A-module of Kähler differentials of A. \cite{May2012MoreCA} provides a concise treatment of algebraic topology, covering topics such as localization and completion of topological spaces, model categories, and Hopf algebras. \cite{Pardon2013AnAA} presents an algebraic approach to virtual fundamental cycles on moduli spaces of pseudo-holomorphic curves, introducing the notion of an implicit atlas on a moduli space. \cite{Husek2002RecentPI} reviews recent progress in general topology, discussing various topics in topological dynamics, Banach spaces, metrizable spaces, and more.
+
+\subsection{Applications of Topological Methods in Algebraic Geometry and Group Theory}
+
+\cite{Hopkins2002AlgebraicTA} explores the connection between algebraic topology and modular forms, discussing the construction of topological modular forms and their applications in various areas of mathematics, including geometry, mathematical physics, number theory, representation theory, and topology.
+
+\subsection{Topological Invariants in Braid Theory and Type II$_1$ Factors}
+
+\cite{Popa2002OnAC} investigates a class of type II$_1$ factors with Betti numbers invariants, proving that a type II$_1$ factor M can have at most one Cartan subalgebra A satisfying a combination of rigidity and compact approximation properties. This can be mathematically expressed as:
+
+\[
+\forall M \, (\text{Type II}_1 \, \text{Factors}), \, \exists! A \, (\text{Cartan Subalgebras of } M) : \text{Rigidity}(A) \, \land \, \text{CompactApprox}(A)
+\]
+
+In the above equation, \(\exists!\) denotes there exists exactly one, \(\land\) denotes logical AND, \(\text{Rigidity}(A)\) represents the rigidity property of the Cartan subalgebra \(A\), and \(\text{CompactApprox}(A)\) represents the compact approximation property of \(A\).
+
+
+%I get two errors:
+%"hyperref Warning: Token not allowed in a PDF string ... removing `math shift' "  and "Undefined control sequence. \forall M \in \text{{Type II}}_1 \text{{ Factors}}, \, \exists! "
+%
+%\subsection{Topological Invariants in Braid Theory and Type II$_1$ Factors}
+%
+%Popa (2002) investigates a class of type II$_1$ factors with Betti numbers invariants. He proves that a type II$_1$ factor \(M\) can have at most one Cartan subalgebra \(A\) satisfying a combination of rigidity and compact approximation properties. This can be mathematically expressed as:
+%
+%\[
+%\forall M \in \text{{Type II}}_1 \text{{ Factors}}, \, \exists! A \in \text{{Cartan Subalgebras of }} M : \text{{Rigidity}}(A) \land \text{{CompactApprox}}(A)
+%\]
+%
+%In the above equation, \(\exists!\) denotes there exists exactly one, \(\land\) denotes logical AND, \(\text{{Rigidity}}(A)\) represents the rigidity property of the Cartan subalgebra \(A\), and \(\text{{CompactApprox}}(A)\) represents the compact approximation property of \(A\).
+%
+
+\subsection{Combinatorial Torsions and Discrete Morse Theory in Topological Analysis}
+
+\cite{Forman2002AUG} provides a user's guide to discrete Morse theory, presenting an overview of the subject and its applications in combinatorics and other areas of mathematics.
+
+\subsection{Topological Data Analysis in Biomolecular Structures and Genomics}
+
+\cite{Ghrist2018HomologicalAA} introduces homological algebra and its applications to data analysis, discussing simplicial and cell complexes, homology, persistent homology, and cellular sheaves. \cite{Rabadan2020TopologicalDA} presents topological data analysis for genomics and evolution, focusing on the applications of algebraic topology in biology. \cite{Cang2015ATA} proposes a topological approach for protein classification, using multi-component persistent homology, multi-level persistent homology, and electrostatic persistence to represent and describe small molecules and biomolecular complexes.
+
+\subsection{Topological Methods in Signal Processing and Machine Learning}
+
+\cite{Cang2017RepresentabilityOA} explores the representability of algebraic topology for biomolecules in machine learning-based scoring and virtual screening, using multi-component persistent homology, multi-level persistent homology, and electrostatic persistence to characterize similarities between molecules. \cite{Carlsson2012TopologicalDA} discusses topological data analysis and machine learning theory, focusing on the development and understanding of persistence in algebraic topology. \cite{Voli2020TopologicalMI} provides an overview of topological methods in signal processing, explaining how notions and invariants such as (co)chain complexes and (co)homology of simplicial complexes can be used to gain insight into higher-order interactions of signals.
+
+
+\section{Computational geometry algorithms}
+
+\subsection{Overview of Computational Geometry Algorithms}
+
+\cite{Cormen2009IntroductionTA} Introduction to Algorithms, third edition, is a comprehensive text on algorithms, covering mathematical foundations, sorting, data structures, graphs, and various selected algorithms such as computational geometry, string algorithms, parallel models of computation, and fast Fourier transforms (FFTs). The book's strength lies in its encyclopedic range, clear exposition, and powerful analysis. Pseudo-code explanation of the algorithms coupled with proof of their accuracy makes this book a great resource on the basic tools used to analyze the performance of algorithms.
+
+\cite{Banyassady2018ComputationalGC} Computational Geometry Column 67 surveys recent results in computational geometry that fall into the limited workspace model, where algorithms use only a constant or sublinear amount of writable memory to accomplish their task. The paper discusses the state of the art, provides illustrative examples, and mentions open problems for further research.
+
+\subsection{Dimension Reduction Techniques: UMAP and its Applications}
+
+\cite{McInnes2018UMAPUM} UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction introduces a novel manifold learning technique for dimension reduction based on Riemannian geometry and algebraic topology. UMAP is competitive with t-SNE for visualization quality, arguably preserves more global structure, and has superior run time performance. Furthermore, UMAP has no computational restrictions on embedding dimension, making it viable as a general-purpose dimension reduction technique for machine learning.
+
+\subsection{Algorithm Libraries and Resources for Computational Geometry}
+
+\cite{Alliez2008ComputationalGA} Computational geometry algorithms library (CGAL) provides easy access to efficient and reliable geometric algorithms in the form of a C++ library. It offers geometric data structures and algorithms that are efficient, robust, easy to use, and easy to integrate into existing software.
+
+\cite{Berg2000ComputationalGA} Computational geometry: algorithms and applications, 3rd Edition, is a well-accepted introduction to computational geometry, covering topics such as polygon, geometric search problems, and data structures. The book is clear and concise, making it suitable for self-study.
+
+\cite{Fogel2015TheCG} The computational geometry algorithms library CGAL is an open-source software library that provides industrial and academic users with easy access to reliable implementations of efficient geometric algorithms.
+
+\subsection{Robustness and Optimization in Computational Geometry}
+
+\cite{Parrilo2000StructuredSP} Structured semidefinite programs and semialgebraic geometry methods in robustness and optimization introduces a specific class of Linear Matrix Inequalities (LMI) whose optimal solution can be characterized exactly. The paper also presents an algorithm for the numerical solution of a special class of frequency-dependent LMIs and a convex optimization framework for semialgebraic problems.
+
+\subsection{Computational Algebraic Geometry and Commutative Algebra}
+
+\cite{Cox2007IdealsVA} Ideals, Varieties, and Algorithms: An Introduction to Computational Algebraic Geometry and Commutative Algebra, 3/e (Undergraduate Texts in Mathematics) is a book that focuses on the study of systems of polynomial equations in one or more variables. It covers topics such as algebraic geometry, Gröbner bases, and real algebraic geometry.
+
+\cite{Schenck2003ComputationalAG} Computational Algebraic Geometry is a book that covers the basics of commutative algebra, projective space and graded objects, free resolutions and regular sequences, Groebner bases, combinatorics and topology, functors, geometry of points, homological algebra, derived functors, curves, sheaves and cohomology, and projective dimension.
+
+\subsection{Applications of Computational Geometry: Visibility Problems, Mesh Generation, and Brain Imaging}
+
+\cite{Luo2005ComputationalGB} Computational geometry based placement migration presents a novel computational geometry-based placement migration method and a new stability metric to more accurately measure the ``similarity'' between two placements. The technique has applications in addressing post-placement design closure issues such as timing, routing congestion, signal integrity, and heat distribution.
+
+\cite{Yau2016ComputationalCG} Computational Conformal Geometry is a volume that presents thorough introductions to the theoretical foundations and practical algorithms of computational conformal geometry. These have direct applications to engineering and digital geometric processing, including surface parameterization, surface matching, brain mapping, 3-D face recognition and identification, facial expression and animation, dynamic face tracking, mesh-spline conversion, and more.
+
+
+\section{Fourier analysis and complex analysis}
+
+\subsection{Fundamentals of Fourier and Complex Analysis}
+
+\cite{Zill2021AdvancedEM} presents an advanced engineering mathematics textbook covering a wide range of topics, including ordinary differential equations, vectors and linear algebra, systems of differential equations and qualitative methods, vector analysis, Fourier analysis and boundary value problems, and complex analysis.
+
+\cite{O'Donnell2014AnalysisOB} provides a thorough overview of the analysis of Boolean functions, which are fundamental objects of study in theoretical computer science and other areas of mathematics. The text covers basic definitions and advanced topics such as hypercontractivity and isoperimetry, and includes applications such as Arrow's theorem from economics and the Goldreich-Levin algorithm from cryptography/learning theory.
+
+\cite{fujita2002microlocal} discusses microlocal analysis and complex Fourier analysis, covering topics such as vanishing of Stokes curves, parabolic equations with singularity on the boundary, residues, heat equation via generalized functions, Bergman transformation for analytic functionals on some balls, hyperfunctions and kernel method, and more.
+
+\cite{Howell2001PrinciplesOF} presents the principles of Fourier analysis, covering topics such as Fourier series, classical Fourier transforms, generalized functions and Fourier transforms, and the discrete theory. The text also includes preliminaries on basic analysis, symmetry and periodicity, elementary complex analysis, and functions of several variables.
+
+\subsection{Spectral Analysis and Decomposition Techniques}
+
+\cite{Rowley2009SpectralAO} introduces a technique for describing the global behavior of complex nonlinear flows by decomposing the flow into modes determined from spectral analysis of the Koopman operator, an infinite-dimensional linear operator associated with the full nonlinear system. The method is illustrated on an example of a jet in crossflow.
+
+\cite{Towne2017SpectralPO} considers the frequency domain form of proper orthogonal decomposition (POD), called spectral proper orthogonal decomposition (SPOD), and establishes relationships between SPOD, dynamic mode decomposition (DMD), and resolvent analysis. The results are demonstrated using two example problems: the complex Ginzburg–Landau equation and a turbulent jet.
+
+\subsection{Fourier Analysis in Time Series and Function Spaces}
+
+\cite{Aczl2008FunctionalEI} discusses functional equations in several variables, covering topics such as axiomatic motivation of vector addition, Cauchy's equation, generalizations of Cauchy's equations to several multiplace vector and matrix functions, conditional Cauchy equations, d'Alembert's functional equation, and more.
+
+\cite{Cappellari2016ImprovingTF} presents an improved method for full spectrum fitting in demand forecasting for a fashion company, using the fast Fourier transform algorithm and comparing it to moving average and exponential smoothing techniques.
+
+\cite{Panaretos2013FourierAO} develops a frequency domain framework for drawing statistical inferences on the second-order structure of a stationary sequence of functional data, focusing on the spectral density operator and using the functional Discrete Fourier Transform (fDFT) for analysis.
+
+\subsection{Applications of Fourier Analysis in Engineering and Physics}
+
+\cite{Wilson2013GaussianPK} introduces Gaussian process kernels for pattern discovery and extrapolation, with applications in wave propagation, data compression, signal processing, image processing, pattern recognition, computer graphics, and more.
+
+\cite{Salvado2005BulletinOT} investigates the response spectra of earthquakes and their relationship to seismological source, path, and site characteristics, using algorithmic differentiation (AD) for sensitivity analysis of complex models.
+
+\cite{Fumi2013FourierAF} demonstrates the use of Fourier analysis for demand forecasting in a fashion company, comparing the fast Fourier transform algorithm to moving average and exponential smoothing techniques.
+
+\subsection{Wavelet Transform and its Comparison to Fourier Analysis}
+
+\cite{Nasih2016ApplicationOW} discusses the application of wavelet transform and its advantages compared to Fourier transform, focusing on the analysis of stationary and non-stationary signals and the use of wavelets for decomposing complex information such as music, speech, images, and patterns.
+
+\subsection{Advanced Topics and Extensions in Fourier Analysis}
+
+\cite{Yang2012LocalFF} proposes local fractional Fourier analysis in generalized Hilbert space, investigating local fractional calculus and complex number of fractional-order based on the complex Mittag-Leffler function in fractal space.
+
+\cite{Qian2001FourierAO} presents Fourier analysis on starlike Lipschitz surfaces, establishing a theory of a class of singular integrals on these surfaces and proposing a new method for inducing Clifford holomorphic functions from holomorphic functions of one complex variable.
+
+
+\section{Graph theory and planar embeddings}
+
+\subsection{Fundamentals of Graph Theory and Planar Embeddings}
+
+Asymptotic enumeration and limit laws of planar graphs \cite{Gimenez2005AsymptoticEA} focus on counting graphs as combinatorial objects, regardless of how many nonequivalent topological embeddings they may have. This makes the counting considerably more difficult.
+
+Rhombic embeddings of planar quad-graphs \cite{Kenyon2004RhombicEO} study embeddings in the plane in which all edges have length 1, meaning every face is a rhombus. The paper provides a necessary and sufficient condition for the existence of such an embedding and describes the set of all such embeddings.
+
+Planar minimally rigid graphs and pseudo-triangulations \cite{Haas2003PlanarMR} prove that planar minimally rigid graphs always admit pointed embeddings, even under certain natural topological and combinatorial constraints. The proofs yield efficient embedding algorithms and provide the first algorithmically effective result on graph embeddings with oriented matroid constraints other than convexity of faces.
+
+\subsection{Applications of Graph Theory in Various Fields}
+
+GraphX: a resilient distributed graph system on Spark \cite{Xin2013GraphXAR} introduces GraphX, which combines the advantages of both data-parallel and graph-parallel systems by efficiently expressing graph computation within the Spark data-parallel framework. It leverages new ideas in distributed graph representation to efficiently distribute graphs as tabular data-structures and advances in data-flow systems to exploit in-memory computation and fault-tolerance.
+
+Graph theory approaches to functional network organization in brain disorders: A critique for a brave new small-world \cite{Hallquist2018GraphTA} reviews clinical network neuroscience and identifies four challenges in the field. The paper also conducts network simulations to demonstrate the impact of specific methodological decisions on case-control comparisons and offers suggestions for promoting convergence across clinical studies.
+
+Graph theory towards designing graphical passwords for mobile devices \cite{Yao2017GraphTT} shows several methods for designing a particular class of graphical passwords by the idea of ``topological structures plus number theory'' in exploring new graphical passwords (Topsnut-GPWs) that can be used on mobile devices with touch screens.
+
+On the pitfalls of geographic face routing \cite{Kim2005OnTP} classifies the ways in which existing planarization techniques fail with realistic, non-ideal radios and demonstrates the consequences of these pathologies on reachability between node pairs in a real wireless testbed.
+
+GemNet: Universal Directional Graph Neural Networks for Molecules \cite{Klicpera2021GemNetUD} closes the gap between theory and practice by showing that GNNs with directed edge embeddings and two-hop message passing are indeed universal approximators for predictions that are invariant to translation, and equivariant to permutation and rotation. The paper proposes the geometric message passing neural network (GemNet) and demonstrates its benefits in multiple ablation studies.
+
+\subsection{Planar Graphs and the Four Color Theorem}
+
+Every Planar Map Is Four Colorable \cite{Appel2019EveryPM} proves the four color theorem by providing an unavoidable set of reducible configurations. The paper uses the method of discharging to produce unavoidable sets of configurations and shows that the initial charge distribution has positive total charge.
+
+\subsection{Graph Drawing and Visualization Techniques}
+
+Handbook on Graph Drawing and Visualization \cite{Tamassia2013HandbookOG} provides an extensive overview of various graph drawing and visualization techniques, including planarity testing, embedding, symmetric graph drawing, proximity drawings, tree drawing algorithms, planar straight-line drawing algorithms, and many more.
+
+Graph drawing beyond planarity: some results and open problems \cite{Liotta2014GraphDB} reviews recent findings and outlines emerging research directions about the theory of ``nearly planar'' graphs, i.e., graphs that have drawings where some crossing configurations are forbidden.
+
+\subsection{Dynamic Graph Algorithms and Planar Embeddings}
+
+Dynamic Graph Algorithms \cite{Eppstein2010DynamicGA} documents the program and outcomes of Dagstuhl Seminar 22461 ``Dynamic Graph Algorithms", which took place from November 13 to November 18, 2022. The seminar brought together leading researchers in dynamic algorithms and related areas of graph algorithms.
+
+Geographic Routing Without Planarization \cite{Leong2006GeographicRW} presents a new geographic routing algorithm, Greedy Distributed Spanning Tree Routing (GDSTR), that finds shorter routes and generates less maintenance traffic than previous algorithms. GDSTR switches to routing on a spanning tree until it reaches a point where greedy forwarding can again make progress.
+
+Some Results on Greedy Embeddings in Metric Spaces \cite{Moitra2008SomeRO} resolves a conjecture of Papadimitriou and Ratajczak that every 3-connected planar graph admits a greedy embedding into the Euclidean plane. The paper also constructs graphs that can be greedily embedded into the Euclidean plane, but for which no spanning tree admits such an embedding.
+
+\subsection{Challenges and Future Directions in Graph Theory and Planar Embeddings}
+
+Future research in graph theory and planar embeddings should focus on addressing the challenges identified in various fields, such as clinical network neuroscience, graph drawing, and dynamic graph algorithms. Additionally, new research scenarios for visual analytics, network visualization, and human-computer interaction paradigms must be identified, and new combinatorial models must be defined and computationally investigated. Finally, theoretical solutions must be experimentally evaluated and put into practice to advance the field.
+
+
+\section{Differential geometry and curvature}
+
+\subsection{Foundations of Differential Geometry and Curvature}
+
+In \cite{Catsigeras2013DifferentialGA}, the authors present a short course on the differential geometry of compact manifolds, the exterior Clifford algebra of differential forms, and their applications to classical and relativistic theories of electromagnetism in Physics. The text is divided into four chapters, with each chapter being independent of the others. Chapter 2 focuses on the integration theorems derived from the differential statements of classical Maxwell's equations, while Chapter 3 introduces Lorentz transformations to prove the relativistic theorems of electromagnetism. Finally, in Section 4, Poisson's equation is introduced and solved by global integration.
+
+\subsection{Applications in Finite Element Exterior Calculus and Homological Techniques}
+
+In \cite{Arnold2006FiniteEE}, the authors discuss finite element exterior calculus, an approach to the design and understanding of finite element discretizations for various systems of partial differential equations. This approach utilizes tools from differential geometry, algebraic topology, and homological algebra to develop discretizations that are compatible with the geometric, topological, and algebraic structures underlying the well-posedness of the PDE problem being solved. Applications are made to the finite element discretization of various problems, including the Hodge Laplacian, Maxwell's equations, the equations of elasticity, and elliptic eigenvalue problems, as well as preconditioners.
+
+\cite{Barabanov2020DifferentialGA} presents a large set of binary operations that are algebraically isomorphic to the binary operation of the Beltrami–Klein ball model of hyperbolic geometry, known as the Einstein addition. The authors prove that each of these operations gives rise to a gyrocommutative gyrogroup isomorphic to the Einstein gyrogroup and satisfies several properties of the Einstein addition. They also derive a formula for the Gaussian curvature of spaces with canonical metric tensors and obtain necessary and sufficient conditions for the Gaussian curvature to be equal to zero.
+
+In (Paper 15), the authors apply differential geometry to dynamical systems, discussing various theorems and techniques such as the Hartman-Grobman Theorem, Liapounoff Stability Theorem, Phase Portraits, Poincare-Bendixson Theorem, Attractors, Strange Attractors, Hamiltonian and Integrable Systems, KAM Theorem, Invariant Sets, Global/Local Invariance, Center Manifold Theorem, Normal Form Theorem, Local Bifurcations of Codimension 1, Hopf Bifurcation, Slow-Fast Dynamical Systems, Geometric Singular Perturbation Theory, Darboux Theory of Integrability, Differential Geometry, Generalized Frenet Moving Frame, Curvatures of Trajectory Curves, Flow Curvature Manifold, Flow Curvature Method, and various models.
+
+\subsection{Semi-Riemannian Geometry and its Role in Differential Geometry}
+
+In \cite{D.2003DifferentialGO}, the authors define orbits for the action of a Lie algebra on a manifold and discuss various notions such as connection, curvature, covariant differentiation, Bianchi identity, parallel transport, basic differential forms, basic cohomology, and characteristic classes for a g-manifold with equidimensional orbits. They also derive a sufficient condition for the projection $M \rightarrow M/g$ to be a bundle associated with a principal bundle.
+
+\subsection{Differential Geometry in Elasticity and Continuum Mechanics}
+
+(Paper 11) provides an extensive overview of differential geometry, covering topics such as smooth manifolds, matrices and Lie groups, vector bundles, algebra of vector bundles, maps and vector bundles, metrics on vector bundles, geodesics, properties of geodesics, principal bundles, covariant derivatives and connections, curvature, flat connections and holonomy, curvature polynomials and characteristic classes, covariant derivatives and metrics, the Riemann curvature tensor, complex manifolds, holomorphic submanifolds, holomorphic sections, and curvature.
+
+\subsection{Interplay between Differential Geometry and Thermodynamics}
+
+In \cite{Quevedo2003DifferentialGA}, the authors present a new approach to the study of thermodynamics in the context of differential geometry. They introduce a fundamental differential 1-form and a metric on a pseudo-Euclidean manifold coordinatized by means of the extensive thermodynamic variables. The connection and curvature of these objects are studied using Cartan structure equations.
+
+(Paper 12) provides an expository review of recent developments in the differential geometry of quantum computation. The authors describe the appropriate Riemannian geometry of the special unitary unimodular group in 2n-dimensions, including the choice of metric, connection, curvature tensor, and optimal geodesics for achieving minimal complexity quantum computations.
+
+\subsection{Differential Geometry in Electromagnetism and Quantum Computing}
+
+In (Paper 13), the authors develop a theory of flow convergence and curvature in plan view for flowlines on ice sheets and glaciers. They show that flow in individual catchments of an ice sheet can converge (despite its overall spreading) because ice divides are loci of strong divergence, and that a sign bifurcation in convergence occurs during ice-sheet 'symmetry breaking' (the transition from near-radial spreading to spreading with substantial azimuthal velocities) and during the formation of ice-stream tributary networks. The theory provides a roadmap for understanding the tower-shaped plot of flow speed versus convergence for the Antarctic Ice Sheet.
+
+
+\section{Knot theory and braids}
+
+\subsection{Knot Theory Fundamentals and Applications}
+
+\cite{Budden2009KnotsAQ} presents a study on quandles, which were introduced to knot theory in the 1980s as an almost complete algebraic invariant for knots and links. The paper investigates the relationship between a link quandle and the quandles of the individual components of the link, as well as coset quandles, which are motivated by the transitive action of the operator, associated and automorphism group actions on a given quandle. The paper also explores the information loss in going from the fundamental quandle of a link to the fundamental group and applies the techniques to calculations for the figure eight knot and braid index two knots and involving lower triangular matrix groups.
+
+\subsection{Cluster Varieties and Knot Theory}
+
+\subsection{Knot Theory in Nematic Colloids and Chemical Topology}
+
+\subsection{Knots and Braids in Proteins and Molecular Structures}
+
+\cite{Jamrz2014KnotProtAD} introduces KnotProt, a database of proteins with knots and slipknots. The database presents the knotting complexity of the cataloged proteins in the form of a matrix diagram, showing the knot type of the entire polypeptide chain and of each of its subchains. The database also provides extensive information about the biological functions, families, and fold types of proteins with non-trivial knotting.
+
+\subsection{Knot Invariants and Higher Representation Theory}
+
+\cite{Webster2013KnotIA} constructs knot invariants categorifying the quantum knot variants for all representations of quantum groups. The paper shows that these invariants coincide with previous invariants defined by Khovanov for $sl_2$ and $sl_3$ and by Mazorchuk-Stroppel and Sussan for $sl_n$. The technique used is to study 2-representations of 2-quantum groups categorifying tensor products of irreducible representations. The paper also investigates the finer structure of these categories and shows that the categorifications of tensor products are related by functors categorifying the braiding and (co)evaluation maps between representations of quantum groups, which allow the construction of bigraded knot homologies whose graded Euler characteristics are the original polynomial knot invariants.
+
+\subsection{Braid and Knot Theory in Dimension Four}
+
+\cite{Kamada2002BraidAK} generalizes braid theory to dimension four by developing the theory of surface braids and applying it to study surface links. The paper presents the generalized Alexander and Markov theorems in dimension four and provides a complete proof of the generalized Markov theorem. Surface links are also studied via the motion picture method, and some important techniques of this method are studied. For surface braids, various methods to describe them are introduced and developed: the motion picture method, the chart description, the braid monodromy, and the braid system. These tools are fundamental to understanding and computing invariants of surface braids and surface links. A table of knotted surfaces is included with a computation of Alexander polynomials. The braid techniques are extended to represent link homotopy classes.
+
+
+\section{Geometric group theory}
+
+\subsection{Foundations and Geometry of Discrete Groups}
+
+In \cite{Dolgachev2006ReflectionGI}, the authors provide a brief exposition of the theory of discrete reflection groups in spherical, Euclidean, and hyperbolic geometry, as well as their analogs in complex spaces. They also present a survey of appearances of these groups in various areas of algebraic geometry.
+
+\cite{Allcock2014GeometricGF} investigates the problem of finding generators for the fundamental group $G$ of a space obtained by removing a family of complex hyperplanes from an $n$-dimensional complex vector space, an $n$-dimensional complex hyperbolic space, or the Hermitian symmetric space for $O(2,n)$, and then taking the quotient by a discrete group $P\Gamma$. The authors show that if $P\Gamma$ contains reflections in the hyperplanes nearest the basepoint, and these reflections satisfy a certain property, then $G$ is generated by the analogues of the generators of the classical braid group. They apply this result to obtain generators for $G$ in a particular intricate example in complex hyperbolic space of dimension 13, which is of interest due to a conjectured relationship between this braid-like group and the monster simple group $M$.
+
+\subsection{Symmetry and Topological Methods in Group Theory}
+
+In \cite{Gens2014DeepSN}, the authors introduce deep symmetry networks (symnets), a generalization of convolutional neural networks (convnets) that forms feature maps over arbitrary symmetry groups. Symnets use kernel-based interpolation to tractably tie parameters and pool over symmetry spaces of any dimension, and are trained with backpropagation. Experiments on NORB and MNIST-rot show that symnets over the affine group greatly reduce sample complexity relative to convnets by better capturing the symmetries in the data.
+
+\cite{McMullen2003AbstractRP} discusses abstract regular polytopes, which are highly symmetric combinatorial structures with distinctive geometric, algebraic, or topological properties. The book provides the first comprehensive up-to-date account of the subject and its ramifications, and is of interest to researchers and graduate students in discrete geometry, combinatorics, and group theory.
+
+In \cite{Sullivan2005GeometricTL}, the authors present a collection of notes on geometric topology, covering topics such as algebraic constructions, homotopy theoretical localization, completions in homotopy theory, spherical fibrations, algebraic geometry, and the Galois group in geometric topology.
+
+\subsection{Geometric and Cohomological Approaches in Group Theory}
+
+\cite{Kropholler2017GeometricAC} is a volume that provides state-of-the-art accounts of recent developments in the fields of geometric and cohomological group theory. The research articles and surveys collected here demonstrate connections to diverse areas such as geometric and low-dimensional topology, analysis, homological algebra, and logic. Topics include various constructions of Thompson-like groups, Wise's theory of special cube complexes, groups with exotic homological properties, the Farrell-Jones assembly conjectures, and new applications of Garside structures.
+
+\cite{Bridson2009GeometricAC} offers a tour through a selection of the most important trends in geometric group theory, including limit groups, quasi-isometric rigidity, non-positive curvature in group theory, and L2-methods in geometry, topology, and group theory. Major survey articles exploring recent developments in the field are supported by shorter research papers, which are written in a style that readers approaching the field for the first time will find inviting.
+
+\subsection{Deformation, Rigidity, and Geometric Invariant Theory}
+
+In \cite{algebras2006DeformationAR}, the authors present recent rigidity results for von Neumann algebras (II1 factors) and equivalence relations arising from measure-preserving actions of groups on probability spaces which satisfy a combination of deformation and rigidity properties. This includes strong rigidity results for factors with calculation of their fundamental group and cocycle superrigidity for actions with applications to orbit equivalence ergodic theory.
+
+\cite{Berczi2016GeometricIT} studies geometric invariant theory for graded unipotent groups over the complex numbers and its applications. The authors show that under certain conditions, the $U$-invariants form a finitely generated graded algebra, and the natural morphism from the semistable subset of $X$ to the enveloping quotient is surjective and expresses the enveloping quotient as a geometric quotient of the semistable subset. They also provide a projective variety which is a geometric quotient by $U$ of an invariant open subset of the product of $X$ with the affine line and contains as an open subset a geometric quotient of a $U$-invariant open subset of $X$ by the action of $U$.
+
+
+\section{Ergodic theory and dynamical systems}
+
+\subsection{Foundations of Ergodic Theory}
+
+In the study of hyperbolic dynamics, the iteration of maps on sets with Lipschitz structures is used to measure distance \cite{Mirzakhani2010IntroductionTE}. Examples of hyperbolic systems include expanding maps on manifolds, Anosov diffeomorphisms, and the shift map. These systems often give rise to iterated function systems of contracting maps, which create complicated fractal limit sets for orbits. An important example from Riemannian geometry is the geodesic flow on the unit tangent bundle of a closed negatively curved manifold. Many of these systems can be coded as subshifts of finite type.
+
+The dynamics of a holomorphic map near a fixed point is a central topic in complex dynamical systems \cite{Guerini2018ErgodicTA}. In the random setting, given a probability measure $\nu$ with compact support on the space of germs of holomorphic maps fixing the origin, the compositions $f_n \circ \cdots \circ f_1$ are studied, where each $f_i$ is chosen independently with probability $\nu$. The stability of the family of random iterates is mostly determined by the linear part of the germs in the support of the measure. A particularly interesting case occurs when all Lyapunov indices vanish, in which case stability implies simultaneous linearizability of all germs in supp($\nu$) \cite{Guerini2018ErgodicTA}.
+
+\subsection{Nonlinear Dynamics in Deep Learning Systems}
+
+Despite the practical success of deep learning methods, our theoretical understanding of the dynamics of learning in deep neural networks remains sparse \cite{Saxe2013ExactST}. The analysis of learning dynamics in deep linear neural networks reveals nonlinear learning phenomena similar to those seen in simulations of nonlinear networks, including long plateaus followed by rapid transitions to lower error solutions, and faster convergence from greedy unsupervised pretraining initial conditions than from random initial conditions. The study also finds that as the depth of a network approaches infinity, learning speed can remain finite under certain conditions on the training data and initial conditions on the weights.
+
+\subsection{Quantum Chaos and Eigenstate Thermalization}
+
+The eigenstate thermalization hypothesis (ETH) is introduced as a natural extension of ideas from quantum chaos and random matrix theory (RMT) \cite{D'Alessio2015FromQC}. The ETH allows for the description of thermalization in isolated chaotic systems without invoking the notion of an external bath. The review also explores the implications of quantum chaos and ETH to thermodynamics, deriving basic thermodynamic relations and showing that quantum chaos allows for the extension of these relations to arbitrary stationary statistical ensembles. The relaxation dynamics and description after relaxation of integrable quantum systems, for which ETH is violated, are also discussed.
+
+\subsection{Joinings in Ergodic Theory}
+
+Joinings play a crucial role in ergodic theory, with applications in various areas such as spectral theory, quasifactors, isometric and weakly mixing extensions, and the Furstenberg-Zimmer structure theorem \cite{Glasner2003ErgodicTV}. The study of entropy theory for $\mathbb{Z}$-systems is also presented, including entropy, symbolic representations, constructions, and the relation between measure and topological entropy.
+
+\subsection{Recurrence and Combinatorial Number Theory in Ergodic Systems}
+
+Furstenberg develops the common ground between topological dynamics and ergodic theory by applying the modern theory of dynamical systems to combinatorics and number theory (Paper 7). This approach allows for the exploration of recurrence in ergodic theory and combinatorial number theory, providing a unified framework for these areas.
+
+
+\section{Combinatorial optimization}
+
+\subsection{1. Fundamentals of Combinatorial Optimization}
+
+(Paper 18) presents a bibliometric analysis of 8,393 articles on combinatorial optimization (CO) to identify research trends, relevant countries, organizations, authors, and collaborations. The study finds that publications on CO mainly focus on the development or enhancement of metaheuristics like genetic algorithms, with increasing attention to real-world applications in the energy sector, production sector, and data management.
+
+\subsection{2. Applications in Network and Graph Optimization}
+
+\cite{Coudert2016CombinatorialOI} investigates the notion of Shared Risk Link Groups (SRLG) in network survivability and the optimization of combinatorial objects like shortest paths, minimum cuts, or pairs of disjoint paths. The paper identifies structural properties of SRLGs that allow for polynomial-time computation and presents experimental results to validate the proposed algorithms and principles.
+
+\subsection{3. Combinatorial Optimization in Scheduling and Resource Allocation}
+
+(Paper 12) introduces a novel combinatorial model that integrates global register allocation, spill code optimization, register packing, and multiple register banks with instruction scheduling. The paper presents Unison, a code generator based on the model and advanced solving techniques using constraint programming. Experiments using MediaBench and a processor (Hexagon) demonstrate that Unison generates faster code than LLVM and can generate optimal code in some cases.
+
+\subsection{4. Advances in Combinatorial Optimization Algorithms}
+
+\cite{Cappart2021CombinatorialOA} presents a conceptual review of recent advancements in using graph neural networks for combinatorial optimization tasks, either directly as solvers or by enhancing existing methods. (Paper 17) introduces a fast and efficient combinatorial algorithm for simultaneously identifying candidate locations and buffer sizes in a clock mesh. Experimental results show that the proposed techniques can result in power savings up to 28\% with less than 4\% delay penalty.
+
+\subsection{5. Combinatorial Optimization in Cryptography and Security}
+
+\cite{Knezevic2017CombinatorialOI} provides a state-of-the-art overview of evolutionary computation in symmetric and asymmetric cryptography, as well as for evolving pseudorandom number generators. The paper discusses the use of evolutionary algorithms in building substitution boxes in symmetric cryptosystems and speeding up discrete mathematic operations in asymmetric cryptosystems.
+
+\subsection{6. Interdisciplinary Applications of Combinatorial Optimization}
+
+\cite{Strehl2003ClusterE} introduces the problem of combining multiple partitionings of a set of objects into a single consolidated clustering without accessing the features or algorithms that determined these partitionings. The paper proposes three effective and efficient techniques for obtaining high-quality consensus functions and evaluates their effectiveness in various application scenarios. (Paper 10) surveys research in computational biology that uses graph theory, matroid theory, and integer linear programming, with applications in haplotyping, recombination networks, and phylogenetics. (Paper 14) discusses the potential of combinatorial optimization techniques, such as simulated annealing, taboo search, and genetic algorithms, in modeling forest ecosystem management in a near-optimal fashion.
+
+
+\section{Fractal geometry and self-similarity}
+
+\subsection{Fundamentals of Fractal Geometry and Self-Similarity}
+
+\cite{Mancuso2015FractalGI} presents an image analysis method based on the box counting algorithm to characterize grapevine leaves. Despite the lack of self-similarity in vine leaves, their complex structure makes them suitable for fractal analysis. The study found significant differences in fractal dimensions among 11 Sangiovese-related genotypes, with some exceptions. The fractal dimension was found to be environment-independent, suggesting its potential use as a morphological parameter in ampelographic research.
+
+\cite{Leleu2010RecursiveSH} introduces a new technique for topological multi-scale analysis by recursively performing clustering to build a hierarchy and analyzing co-scale and intra-scale similarities. This method can extract an Iterated Function System from any dataset and is efficient in extracting self-similarities, providing elegant solutions to the inverse problem of building fractals. The paper discusses theoretical aspects and practical implementations, along with examples of simple fractal analyses.
+
+\subsection{Applications of Fractal Geometry in Porosity and Material Science}
+
+\subsection{Fractal Assembly and DNA Origami in Nanotechnology}
+
+\subsection{Fractal Geometry in Electronic Structure Methods and Quantum Physics}
+
+\cite{Vegh2013HolographyWT} proposes massive gravity as a holographic framework for describing strongly interacting quantum field theories with broken translational symmetry. Bulk gravitons have a Lorentz-breaking mass term as a substitute for spatial inhomogeneities, breaking momentum-conservation in the boundary field theory. The study finds that the optical conductivity in these systems exhibits an emergent scaling law: $|\sigma(\omega)| \approx {A \over \omega^{\alpha}} + B$. This result is consistent with previous studies that introduced an explicit inhomogeneous lattice into the system.
+
+\cite{Basu2019FractalGO} investigates the fractal geometry of Airy$_{2}$ processes coupled via the Airy sheet. The study proves that the scaled energy difference profile is a non-decreasing process that is constant in a random neighborhood of almost every $z \in \mathbb{R}$, with the exceptional set of $z$ having a Hausdorff dimension of one-half. Points of violation correspond to special behavior for scaled maximizing paths, and the result is proven by investigating this behavior using Brownian regularity of profiles and estimates on the rarity of pairs of disjoint scaled maximizing paths that begin and end close to each other.
+
+\cite{Parker2014LevelsOS} provides a systematic examination of the computational expense and accuracy of Symmetry-Adapted Perturbation Theory (SAPT) for predicting non-covalent interaction energies. The study recommends SAPT2+(3)$\delta$MP2/aug-cc-pVTZ, SAPT2+/aug-cc-pVDZ, and sSAPT0/jun-cc-pVDZ as the gold, silver, and bronze standards of SAPT, respectively, based on their error performance relative to computational effort.
+
+\subsection{Fractal Geometry in Antenna Design and Telecommunications}
+
+\cite{Barakou2015FractalGF} presents an application of fractal geometry in the design, development, and expansion of distribution networks. The fractal dimension of distribution networks is measured using the box-counting algorithm, and a two-dimensional stochastic dielectric breakdown model (DBM) is utilized to generate virtual distribution networks. The study finds that controlling the value of $\eta$, the exponent of the breakdown probability distribution, can produce growth patterns similar to actual distribution networks. The electrical characteristics of the fractal-generated networks are measured and compared with real distribution networks.
+
+\cite{Jena2019FractalGA} focuses on various fractal geometries and their applications to antenna designs. The paper discusses the importance and design procedure of several nature-inspired and human-inspired fractal geometries, as well as their dimensions found using mathematical modeling. The study presents various low-profile, low-cost, small-size, and lightweight antenna designs for wireless applications, discussing the broadband, wideband, and multiband nature of the designs due to fractal application.
+
+\cite{Maksymyuk2015FractalGB} proposes a new resource allocation method for multi-tier heterogeneous networks (HetNet) based on fractal geometry. The approach is scalable to various network topologies regardless of cell size due to the fractal geometry pattern. The study develops a fractal-based frequency reuse to assess interference and capacity in HetNet.
+
+\subsection{Fractal Patterns, Pseudo-tilings, and Symmetry in Art and Design}
+
+\cite{Eisenhower2016FractalGA} discusses the application of fractal geometry in computer graphics, providing an online access to a book collection on the topic.
+
+\cite{Fathauer2004FractalPA} describes a variety of fractal patterns and pseudo-tilings created by iterative arrangement of successively smaller spirals and spiral-shaped tiles. In some cases, these patterns are used to create two-dimensional designs that resemble natural trees.
+
+\cite{Shier2015FractalWP} presents an algorithm that fills rectangles and triangles that tile the plane with an infinite sequence of randomly placed and progressively smaller shapes, producing fractal wallpaper patterns. These patterns exhibit a pleasing combination of global symmetry and local randomness. The paper shows several sample patterns.
+
+
+\section{Algebraic curves and Riemann surfaces}
+
+\subsection{Fundamentals of Algebraic Curves and Riemann Surfaces}
+
+In \cite{Hacking2007RiemannS}, the authors provide a course on Riemann surfaces, which serves as a follow-up to Math 506. The course assumes that students have prior knowledge in complex analysis, algebra, and topology. It is divided into two parts: the first part covers the basics of Riemann surfaces and develops the necessary tools to prove the Riemann-Roch theorem. Once the theorem is proved, compact Riemann surfaces can be studied as algebraic curves in projective spaces. The second part of the course focuses on the classical theory of algebraic curves.
+
+\subsection{Compact Complex Surfaces and Their Properties}
+
+\subsection{Elliptic Curves and Their Applications}
+
+In \cite{Ruddat2020AlgebraicC}, the authors present a course on algebraic curves. After an introduction to elementary algebraic geometry, various operations and structures are studied to understand and modify algebraic curves. The course culminates in the resolution of singularities for algebraic curves and the Riemann-Roch theorem. Topics covered include affine algebraic sets, affine varieties, local properties of plane curves, projective varieties, projective plane curves, varieties, morphisms, rational maps, resolution of singularities, and the Riemann-Roch theorem.
+
+\subsection{Noncommutative Riemann Surfaces and Mathematical Physics}
+
+\cite{Ohsaku2006AlgebraON} investigates the algebraic properties of noncommutative $z$-planes and Riemann surfaces. The starting point of the study is a two-dimensional noncommutative field theory, which is then converted into a complex coordinate system. The basis of noncommutative complex analysis is thoroughly obtained, and considerations on functional analysis are given before examining conformal mapping and Teichmuller theory. Keywords include complex analysis, Riemann surfaces and Teichmuller space, functional analysis, deformation quantization, non-commutative geometry, and quantum groups.
+
+\subsection{Rich Points and Doubly-Ruled Surfaces in Algebraic Curves}
+
+In \cite{Guth2015AlgebraicCR}, the authors study the structure of collections of algebraic curves in three dimensions that have many curve-curve incidences. Let $k$ be a field and let ${\cal L}$ be a collection of $n$ space curves in $k^3$, with $n\ll ({\rm char}(k))^2$ or ${\rm char}(k)=0$. The authors show that either (a) there are at most $O(n^{3/2})$ points in $k^3$ hit by at least two curves, or (b) at least $\Omega(n^{1/2})$ curves from ${\cal L}$ must lie on a bounded-degree surface, and many of the curves must form two ``rulings'' of this surface. The paper also develops several new tools, including a generalization of the classical flecnode polynomial of Salmon and new algebraic techniques for dealing with this generalized flecnode polynomial.
+
+\subsection{Computational Approaches: Algebraic Curves and Riemann Surfaces in Matlab}
+
+
+\section{Convex analysis and optimization}
+
+\subsection{Section 1. Fundamentals of Convex Analysis}
+
+\cite{Ben-Tal2001LecturesOM} Lectures on modern convex optimization - analysis, algorithms, and engineering applications \\
+This book focuses on well-structured and efficiently solvable convex optimization problems, particularly conic quadratic and semidefinite programming. The authors present the basic theory underlying these problems and their numerous applications in engineering, including filter synthesis, Lyapunov stability analysis, and structural design. They also discuss complexity issues and provide an overview of the basic theory of state-of-the-art polynomial time interior point methods for linear, conic quadratic, and semidefinite programming. The book's emphasis on well-structured convex problems in conic form allows for a unified theoretical and algorithmic treatment of a wide spectrum of important optimization problems arising in applications.
+
+\cite{Strauss2016ConvexAA} Convex Analysis And Global Optimization \\
+This book on convex analysis and global optimization is available in a digital library with online access, allowing readers to download it instantly. The book is universally compatible with any devices to read.
+
+\cite{None} Convex Analysis and Optimization Preface \\
+This book, which evolved from a set of lecture notes for a graduate course at M.I.T., aims to make convex analysis accessible to a broader audience by emphasizing its geometrical character while maintaining mathematical rigor. The authors include numerous insightful illustrations and use geometric visualization as a principal tool for maintaining students' interest in mathematical proofs.
+
+(Paper 14) Convex optimization theory \\
+This textbook provides a concise, well-organized, and rigorous development of convex analysis and convex optimization theory. The text is highly geometrically oriented, relying on visualization to explain complex concepts at an intuitive level and to guide mathematical proofs. The book focuses on duality theory and includes a supplementary web-based chapter on convex optimization algorithms, which will be periodically updated to reflect new research developments. The book is suitable for a theoretical one-quarter or one-semester course on convex analysis and optimization, as well as for self-study and as a supplement to other courses on convex optimization models.
+
+(Paper 15) Convex Analysis and Optimization in Hadamard Spaces \\
+This book provides a systematic account of convex analysis and optimization in Hadamard spaces, primarily aimed at graduate students and researchers in analysis and optimization.
+
+(Paper 16) Convex Analysis and Stochastic Programming \\
+These lecture notes give an introduction to convex analysis and its application to stochastic programming, i.e., optimization problems where decisions must be made in the presence of uncertainties. The basic tool for studying such problems is the combination of convex analysis with measure theory.
+
+\subsection{Section 2. Convex Optimization Algorithms and Complexity}
+
+\cite{Bubeck2014ConvexOA} Convex Optimization: Algorithms and Complexity \\
+This monograph presents the main complexity theorems in convex optimization and their corresponding algorithms. The material progresses from the fundamental theory of black-box optimization towards recent advances in structural optimization and stochastic optimization. The presentation includes the analysis of cutting plane methods, (accelerated) gradient descent schemes, non-Euclidean settings, and algorithms such as Frank-Wolfe, mirror descent, and dual averaging. The monograph also provides a gentle introduction to structural optimization with FISTA, saddle-point mirror prox, and a concise description of interior point methods. In stochastic optimization, the discussion covers stochastic gradient descent, mini-batches, random coordinate descent, and sublinear algorithms. The monograph briefly touches upon convex relaxation of combinatorial problems and the use of randomness to round solutions, as well as random walks based methods.
+
+(Paper 17) Convex Optimization Theory \\
+This book provides an insightful, concise, and rigorous treatment of the basic theory of convex sets and functions in finite dimensions, as well as the dual problem. The book covers subgradient methods, linear programming, minimax problems, and nonconvex optimization with equality constraints, among other topics.
+
+\subsection{Section 5. Multi-task Feature Learning and Fairness Measures}
+
+\cite{Tsang2022ConvexFM} Convex Fairness Measures: Theory and Optimization \\
+This paper proposes a new parameterized class of fairness measures, convex fairness measures, suitable for optimization contexts. The class includes the authors' new proposed order-based fairness measure and several popular measures. The paper provides theoretical analyses and derives a dual representation of these measures, which allows for a unified mathematical expression and a geometric characterization through their dual sets. The authors also propose a generic framework for optimization problems with a convex fairness measure objective, including reformulations and solution methods, and provide a stability analysis on the choice of convex fairness measures in the objective of optimization models.
+
+\subsection{Section 6. Constrained Consensus and Optimization in Multi-Agent Networks}
+
+(Paper 13) Constrained Consensus and Optimization in Multi-Agent Networks \\
+This paper presents distributed algorithms that can be used by multiple agents to align their estimates with a particular value over a network with time-varying connectivity. The value can represent a consensus value among multiple agents or an optimal solution of an optimization problem, where the global objective function is a combination of local agent objective functions. The main focus is on constrained problems where the estimates of each agent are restricted to lie in different convex sets. The authors present a distributed ``projected consensus algorithm'' and a ``projected subgradient algorithm'' for constrained consensus and optimization problems, respectively, and establish convergence and convergence rate results for these algorithms.
+
+
+\section{Symmetry groups and transformation geometry}
+
+\subsection{Symmetry Groups: Definitions and Applications}
+
+\textbf{Paper 1} presents a new algorithm for detecting and extracting partial and approximate symmetries in 3D geometric models. The method is based on matching local shape signatures and accumulating evidence for symmetries in a transformation space. The extracted symmetry graph representation enables further processing operations such as shape compression, segmentation, consistent editing, symmetrization, and indexing for retrieval \cite{Mitra2006PartialAA}.
+
+\textbf{Paper 12} discusses the geometry of crystallographic groups, which are groups that act in a nice way and via isometries on some n-dimensional Euclidean space. The book is divided into two parts, with the first part covering the basic theory of crystallographic groups and the second part discussing more advanced and recent topics \cite{Szczepaski2012GeometryOC}.
+
+\textbf{Paper 19} uses fundamental ideas from complex analysis to create symmetric images and animations. By generating mappings to the entire complex plane or the hyperbolic upper half-plane, the resulting designs can have rotational, translational, or mirror symmetry according to the chosen mapping functions. The designs reveal important properties of Euclidean and non-Euclidean geometries and can be animated \cite{Gullerud2020SymmetryAA}.
+
+\subsection{Transformation Geometry in 3D Models and Architectural Design}
+
+\textbf{Paper 4} studies nonlocal two-qubit operations from a geometric perspective. By applying a Cartan decomposition to su(4), the geometric structure of nonlocal gates is found to be a 3-torus. The paper derives invariants for local transformations and connects these invariants to the coordinates of the 3-torus. The study also investigates the properties of perfect entanglers and provides criteria to determine whether a given two-qubit gate is a perfect entangler \cite{Zhang2002GeometricTO}.
+
+\textbf{Paper 17} discusses the use of symmetry-encoded representation for extending CAD tools for non-Euclidean use in the design of Kuwait International Airport. The approach overcomes the limitations of Euclidean geometry often associated with CAD software \cite{Josefsson2013SymmetryAG}.
+
+\subsection{Spatial Transformations: Mental Rotation and Perspective}
+
+\textbf{Paper 9} investigates the cognitive advantage of imagined spatial transformations of the human body over more unfamiliar objects. The study shows that providing objects with body characteristics facilitates the mapping of the cognitive coordinate system of one's body onto the abstract shape, improving object shape matching \cite{Amorim2006EmbodiedST}.
+
+\textbf{Paper 11} distinguishes between object-based spatial transformations and egocentric perspective transformations in mental spatial transformations. The study uses functional MRI to analyze brain activity during spatial judgments about pictures of human bodies and discusses the results in terms of specialized subsystems for performing object-based and egocentric perspective image transformations \cite{Zacks2002APS}.
+
+\subsection{Differential Geometry and Transformation Groups}
+
+\textbf{Paper 3} discusses transformation groups in differential geometry, focusing on the use of transformation groups in various applications and the compatibility of these groups with different devices \cite{Mueller2016TransformationGI}.
+
+\textbf{Paper 15} presents a survey on polar actions and generalizations of isoparametric hypersurfaces in space forms to more general ambient spaces. The talk focuses on transformation groups and submanifold geometry \cite{Thorbergsson2005TransformationGA}.
+
+\subsection{Symmetry Breaking and General Relativity}
+
+\textbf{Paper 0} discusses the geometric structure of theories with gauge fields of spins two and higher, which should involve a higher spin generalization of Riemannian geometry. The paper analyzes the case of W $\inf$-gravity in detail and connects the results with other formulations of W-gravity \cite{Carroll2017Geometry}.
+
+\textbf{Paper 8} investigates symmetry breaking for representations of rank one orthogonal groups. The paper constructs a holomorphic family of symmetry breaking operators and proposes a classification scheme to find all matrix-valued symmetry breaking operators explicitly \cite{Kobayashi2013SymmetryBF}.
+
+\textbf{Paper 16} proposes a framework for the free field construction of algebras of local observables using the Bisognano–Wichmann relations and a representation of the Poincare group on the one-particle Hilbert space. The approach works for continuous spin representations and extends to other spacetimes homogeneous under a group of geometric transformations \cite{Brunetti2002ModularLA}.
+
+\subsection{Machine Learning and Spatial-Temporal Transformations}
+
+\textbf{Paper 5} introduces a low-rank approximation to the interaction tensor of a restricted Boltzmann machine, allowing efficient learning of transformations between larger image patches. The model learns optimal filter pairs for efficiently representing transformations and can perform a simple visual analogy task \cite{Memisevic2010LearningTR}.
+
+\textbf{Paper 14} proposes a symmetry principle for attribute-object transformation and builds a transformation framework called SymNet. The paper also introduces a Relative Moving Distance (RMD) based recognition method for classifying attributes and demonstrates the effectiveness of the symmetry learning approach for the Compositional Zero-Shot Learning task \cite{Li2020SymmetryAG}.
+
+
+\section{Discrete and computational topology}
+
+\subsection{Foundations of Discrete and Computational Topology}
+
+\cite{Zomorodian2012AdvancesIA} Advances in Applied and Computational Topology \\
+This volume provides a broad introduction to recent techniques from applied and computational topology. Topics covered include topological data analysis, asymptotic behavior of dynamical systems, Euler Calculus and its applications to sensor and network data aggregation, the relationship of topology with planning and probability, and algorithms and hardness results for topological optimization problems.
+
+\subsection{Expander Graphs and Applications in Topology}
+
+\cite{Hoory2006ExpanderGA} Expander Graphs and their Applications \\
+This survey discusses the importance of expander graphs in both mathematics and computer science. Expander graphs are simultaneously sparse and highly connected, making them useful in various contexts such as communication networks, error-correcting codes, and pseudorandomness. They also play a role in metric embeddings, convergence rates of Markov Chains, and Monte-Carlo algorithms in statistical mechanics.
+
+\subsection{Combinatorial Algebraic Topology and Discrete Geometry}
+
+\cite{Devadoss2011DiscreteAC} Discrete and Computational Geometry \\
+This undergraduate textbook offers a comprehensive introduction to discrete and computational geometry, covering traditional topics as well as more recent subjects. The book also includes numerous full-color illustrations, exercises, and unsolved problems.
+
+\cite{Aronov2003DiscreteAC} Discrete and computational geometry: the Goodman-Pollack Festschrift \\
+This collection of papers covers a wide range of topics in discrete and computational geometry, including complexity bounds, surface reconstruction, Tur'an-type extremal theory, and metric embeddings.
+
+\cite{Verdire2014DiscreteSI} Discrete Systolic Inequalities and Decompositions of Triangulated Surfaces \\
+This paper investigates the minimum length of topologically non-trivial closed curves, pants decompositions, and cut graphs in triangulated combinatorial surfaces. The work builds upon Riemannian systolic inequalities and provides algorithms for computing such decompositions.
+
+\cite{Loera2012AlgebraicAG} Algebraic and Geometric Ideas in the Theory of Discrete Optimization \\
+This book presents recent advances in the mathematical theory of discrete optimization, particularly those supported by methods from algebraic geometry, commutative algebra, convex and discrete geometry, and generating functions.
+
+\cite{Robins2011TheoryAA} Theory and Algorithms for Constructing Discrete Morse Complexes from Grayscale Digital Images \\
+This paper presents an algorithm for determining the Morse complex of a two or three-dimensional grayscale digital image. The algorithm uses discrete Morse theory and simple homotopy theory to prove its correctness.
+
+\cite{Brown2022DiscreteMM} Discrete Microlocal Morse Theory \\
+This paper establishes several results combining discrete Morse theory and microlocal sheaf theory in the setting of finite posets and simplicial complexes. The primary tool is a computationally tractable description of the bounded derived category of sheaves on a poset with the Alexandrov topology.
+
+\subsection{Topological Models in Molecular Biology and Single Cell Analysis}
+
+\cite{Ackley2018DigitalPW} Digital protocells with dynamic size, position, and topology \\
+This paper introduces C211, a two-dimensional digital 'protocell' with life-like features, designed for the best-effort asynchronous cellular automata called the Movable Feast Machine. The protocell consists of an amorphous variable-density 'cytoplasm' and an asymmetric 'bilayer membrane' providing some environmental isolation while adapting to cytoplasmic dynamics.
+
+\subsection{Introduction to Topological Data Analysis and Persistent Homology}
+
+\cite{Chazal2017AnIT} An Introduction to Topological Data Analysis: Fundamental and Practical Aspects for Data Scientists \\
+This article provides a brief introduction to topological data analysis (TDA) for non-experts, covering basic fundamental and practical aspects of the field.
+
+\cite{Munch2017AUG} A User's Guide to Topological Data Analysis \\
+This article introduces two commonly used topological signatures: persistence diagrams and mapper graphs. It discusses their applications in data analysis and statistical learning, making them accessible to researchers in education and learning, as well as domain scientists.
+
+\subsection{Open Problems and Advances in Discrete and Computational Geometry}
+
+\cite{Edelsbrunner2012OpenPI} Open Problems in Discrete and Computational Geometry \\
+This paper presents a collection of open problems in discrete and computational geometry, as well as computational topology.
+
+
+\section{Singularity theory and catastrophe theory}
+
+\subsection{Overview of Singularity Theory and Catastrophe Theory}
+
+Singularity theory and catastrophe theory are mathematical frameworks that study the behavior of functions and their critical points. These theories have found applications in various fields, including cosmology, astrophysics, fluid mechanics, and glass-forming liquids. In this literature review, we will discuss some of the recent developments in these areas and their applications.
+
+\subsection{Causality Theory for Closed Cone Structures with Applications}
+
+In \cite{Minguzzi2017CausalityTF}, the authors develop a causality theory for upper semi-continuous distributions of cones over manifolds. This generalizes results from mathematical relativity in two directions: non-round cones and non-regular differentiability assumptions. The authors prove the validity of most results of the regular Lorentzian causality theory, including the causal ladder, Fermat's principle, notable singularity theorems in their causal formulation, Avez-Seifert theorem, and characterizations of stable causality and global hyperbolicity by means of (smooth) time functions. The paper also contains a study of Lorentz-Minkowski spaces under very weak regularity conditions and introduces the concepts of stable distance and stable spacetime, solving two well-known problems.
+
+\subsection{Singularity Theory of Smooth Mappings and its Applications}
+
+In \cite{Izumiya2006SingularityTO}, the authors provide an elementary survey on the results of the singularity theory of smooth mappings and its applications. This serves as a useful introduction for non-specialists interested in the field.
+
+\subsection{Applications of Singularity Theory in Cosmology and Astrophysics}
+
+\subsection{Singularity Theory in Fluid Mechanics and Glass-Forming Liquids}
+
+\subsection{Gravitational Lensing and Black Holes in Singularity Theory}
+
+\subsection{Mathematical Foundations and Integrable Systems in Singularity Theory}
+
+In \cite{Dubrovin2012SingularityTA}, the authors discuss the connections between singularity theory, integrable systems, and quantum cohomology. These areas are linked by their applications in topological quantum field theory and by constructions of (often isomorphic) Frobenius manifolds. The workshop described in the paper aimed to stimulate further development of the connections between these areas, with a focus on the connection between singularity theory and integrable systems. The paper provides an overview of the talks and discussions that took place during the workshop, highlighting the progress made and the challenges that remain.
+
+\subsection{Open Quantum Systems and Singularities in Everyday Phenomena}
+
+In \cite{Rotter2015ARO}, the authors review recent advances in the theoretical and experimental understanding of open quantum systems (OQSs). These systems consist of a localized, microscopic region coupled to an external environment through an appropriate interaction. The authors discuss the behavior of mesoscopic devices and other OQSs in terms of the projection-operator formalism, focusing on the role of exceptional points (EPs) in the spectra of OQSs and their influence on wavefunction phases and dynamical phase transitions (DPTs). The paper also reviews experiments on mesoscopic quantum point contacts, microwave cavities, open quantum dots, single-electron transistors, and atomic ensembles, highlighting the environmentally-mediated coupling between different quantum states and the potential for new applications in photonics and electronics.
+
+
+\section{Random matrix theory and free probability}
+
+\subsection{Fundamentals of Random Matrix Theory and Free Probability}
+
+The foundations of modern probability theory are covered in \cite{Kallenberg2021FoundationsOM}, which includes measure theory, random sequences, characteristic functions, conditioning, martingales, Markov processes, stationary processes, ergodic theory, Gaussian processes, Brownian motion, independent increments, infinite divisibility, stochastic integrals, and more. 
+
+Topics in random matrix theory are explored in \cite{Tao2012TopicsIR}, focusing on the spectral distribution of random Wigner matrix ensembles and iid matrix ensembles. The text is largely self-contained and suitable for graduate students entering the field. 
+
+Free probability theory is applied to the spectral properties of deformed matricial models in \cite{Capitaine2016SpectrumOD}, providing a unified understanding of various asymptotic phenomena such as spectral measure description, localization and fluctuations of extremal eigenvalues, and eigenvector behavior.
+
+\subsection{Concentration Inequalities and Non-asymptotic Analysis}
+
+An introduction to the non-asymptotic analysis of random matrices is provided in \cite{Vershynin2010IntroductionTT}, covering tools for analyzing extreme singular values of random matrices with independent rows or columns. Applications in theoretical computer science, statistics, and signal processing are discussed.
+
+Concentration inequalities for functions of independent random variables are explored in \cite{Boucheron2013ConcentrationI}, with applications in machine learning, statistics, discrete mathematics, and high-dimensional geometry. The book covers the interplay between probabilistic structure and various tools, such as functional inequalities, transportation arguments, and information theory.
+
+The non-asymptotic theory of extreme singular values of random matrices with independent entries is surveyed in \cite{Rudelson2010NonasymptoticTO}, focusing on recently developed geometric methods for estimating the hard edge of random matrices.
+
+A critical introductory treatment of probability theory is given in \cite{Finetti2017TheoryOP}, covering random processes with independent increments, Markov processes, stationary processes, problems in higher dimensions, inductive reasoning, statistical inference, and mathematical statistics.
+
+\subsection{Applications in Wireless Communications and Network Embedding}
+
+Random matrix methods for wireless communications are introduced in \cite{Couillet2011RandomMM}, covering the Stieltjes transform method, free probability theory, combinatoric approaches, deterministic equivalents, and spectral analysis methods for statistical inference. Applications to CDMA, MIMO, multi-cell networks, and signal detection and estimation in cognitive radio networks are discussed.
+
+The unification of DeepWalk, LINE, PTE, and node2vec network embedding methods as matrix factorization is presented in \cite{Qiu2017NetworkEA}, revealing the theoretical connections between skip-gram based network embedding algorithms and the theory of graph Laplacian.
+
+\subsection{Interactions with Particle Systems, Integrable Systems, and Combinatorics}
+
+Random matrix theory, interacting particle systems, and integrable systems are discussed in \cite{Deift2014RandomMT}, covering various topics such as universality conjecture, Riemann-Hilbert approach, asymptotic behavior of Toeplitz determinants, conservation laws, and replica analysis.
+
+The connections between random matrices and combinatorics are explored in \cite{Speicher2016RandomMA}, focusing on the lattice of non-crossing partitions and the notion of free cumulants in free probability theory.
+
+Random matrices and the six-vertex model are studied in \cite{Bleher2013RandomMA}, with a detailed description of the Riemann-Hilbert approach to the asymptotic analysis of both continuous and discrete orthogonal polynomials, and applications to random matrix models.
+
+\subsection{Connections to Quantum Physics and Operator Algebras}
+
+The random matrix theory of isospectral twirling is presented in \cite{Oliviero2020RandomMT}, providing a systematic construction of probes into the dynamics of isospectral ensembles of Hamiltonians and showing how these quantities separate chaotic quantum dynamics from non-chaotic ones.
+
+Random matrices, free probability, and the replica method are discussed in \cite{Mller2004RandomMF}, reviewing tools from probability theory, operator algebra, and statistical physics, and their applications in communication systems.
+
+Random matrices, free probability, planar algebras, and subfactors are explored in \cite{Guionnet2007RandomMF}, showing how a tower of non-commutative probability spaces can be associated with a given planar algebra and how the associated von Neumann algebras realize the planar algebra as a system of higher relative commutants.
+
+\subsection{High-Dimensional Probability and Statistical Physics Perspectives}
+
+Random matrices with exchangeable entries are studied in \cite{Kirsch2018RandomMW}, considering ensembles of real symmetric band matrices with entries drawn from an infinite sequence of exchangeable random variables. The eigenvalue distribution measures are shown to converge to a semicircle with random scaling.
+
+High-dimensional probability is covered in \cite{Vershynin2018HighDimensionalP}, offering insights into the behavior of random vectors, random matrices, random subspaces, and objects used to quantify uncertainty in high dimensions. Concentration inequalities form the core, with applications in covariance estimation, clustering, networks, semidefinite programming, coding, dimension reduction, matrix completion, machine learning, compressed sensing, and sparse regression.
+
+
+
+
+\bibliographystyle{unsrtnat}
+\bibliography{references}
+
+%\appendix
+%\section{Parameters}
+
+\end{document}

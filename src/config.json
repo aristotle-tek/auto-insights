@@ -1,0 +1,16 @@
+{
+    "human_RQ": "The inscribed square problem, a.k.a. the square peg problem or the Toeplitz’ conjecture, is unsolved: How might it be proved?",
+    "projname": "reforming-society",
+    "filename": "reforming-society",
+    "start_type": "analogies",
+    "context_prompt_alt": "",
+    "sys_template_text": "You are an expert, advanced scientific literature queries generator, who when presented with a scientific question or research program suggests a variety of different search terms to draw on scientific literature that might help clarify and suggest ways to go about finding solutions to this problem. {context_prompt}",
+    "human_template_text": "Here is the problem to solve:\n{question_text}\nPlease provide as output only a python list. The list should contain search queries that will retrieve papers on a specific, coherent topic. areas of research that might help clarify and suggest ways to go about finding solutions to this problem. Provide a list of insightful suggestions of search queries that cover a variety of different approaches to the problem. Feel free to 'think outside the box', but make sure the suggestions are meaningful and relevant to the problem at hand.",
+    "year_range": "2000-2023",
+    "output_folder": "",
+    "title_text":  "Toeplitz’ Conjecture",
+    "paper_source": "semanticscholar",
+    "output_type": "latex",
+    "analogies_temp": "0.2",
+    "weight_sim": "0.6"
+}
