@@ -42,4 +42,4 @@ This project is licensed under the [MIT License](./LICENSE).
 
 ## Acknowledgements
 This project incorporates a code from Eimen Hamedat (in `paper_loaders.py`), which is licensed under the MIT License. 
-The original code can be found [here](https://github.com/eimenhmdt/autoresearcher/blob/main/autoresearcher/data_sources/web_apis/semantic_scholar_loader.py)
+The original code can be found [here](https://github.com/eimenhmdt/autoresearcher/blob/main/autoresearcher/data_sources/web_apis/semantic_scholar_loader.py).
